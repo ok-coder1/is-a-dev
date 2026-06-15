@@ -21,8 +21,9 @@
       "severity": "error",
       "pattern": [
         {
-          "regexp": "^\\s+Error:\\s+(.+)$",
-          "message": 1
+          "regexp": "Failed to read JSON for .+: .+/work/is-a-dev/is-a-dev/(domains/.+\\.json)",
+          "file": 1,
+          "message": 0
         }
       ]
     }
