@@ -57,6 +57,7 @@ jobs:
                   FORCE_COLOR: true
 
             - name: Remove matchers
+              if: always()
               run: |
                 echo "::remove-matcher owner=ava::"
                 echo "::remove-matcher owner=ava-error::"
