@@ -49,11 +49,9 @@ jobs:
                   args: check
 
             - name: Register AVA Problem Matcher
-              id: problem_matcher
               run: echo "::add-matcher::.github/problem-matcher.json"
 
             - name: Run tests
-              if: steps.problem_matcher.outcome == 'success'
               run: npx ava tests/*.test.js --timeout=1m
               env:
                   FORCE_COLOR: true
