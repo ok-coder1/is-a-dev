@@ -21,9 +21,8 @@
       "severity": "error",
       "pattern": [
         {
-          "regexp": "^\\s+✘ \\[fail\\]:\\s+(.+?)\\s+(.+\\.json.+)$",
-          "message": 1,
-          "code": 2
+          "regexp": "^\\s+✘ \\[fail\\]:\\s+(.+)$",
+          "message": 1
         }
       ]
     }
