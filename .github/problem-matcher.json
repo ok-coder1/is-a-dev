@@ -5,7 +5,7 @@
       "severity": "error",
       "pattern": [
         {
-          "regexp": "^\\s+✘ \\[fail\\]: (.+)$",
+          "regexp": "✘ \\[fail\\]: (.+)",
           "message": 1
         }
       ]
