@@ -11,7 +11,7 @@
         },
         {
           "regexp": "^\\s+(.+)$",
-          "message": 1,
+          "line": 1,
           "loop": true
         }
       ]
