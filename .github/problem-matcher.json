@@ -5,9 +5,19 @@
       "severity": "error",
       "pattern": [
         {
-          "regexp": "^\\s+✘ \\[fail\\]:\\s+(.+?)\\s+(.+)$",
-          "message": 1,
-          "code": 2
+          "regexp": "^\\s+✘ \\[fail\\]:\\s+(.+)$",
+          "message": 1
+        }
+      ]
+    },
+    {
+      "owner": "ava-file-location",
+      "severity": "error",
+      "pattern": [
+        {
+          "regexp": "^\\s+tests\\/(.+\\.js):(\\d+)$",
+          "file": 1,
+          "line": 2
         }
       ]
     },
@@ -29,6 +39,16 @@
           "regexp": "^\\s+SyntaxError:\\s+(.+?):\\s+(.+)$",
           "file": 1,
           "message": 2
+        }
+      ]
+    },
+    {
+      "owner": "ava-assertion",
+      "severity": "error",
+      "pattern": [
+        {
+          "regexp": "^\\s+(.+)$",
+          "message": 1
         }
       ]
     }
