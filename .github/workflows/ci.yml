@@ -59,5 +59,4 @@ jobs:
             - name: Remove matchers
               run: |
                 echo "::remove-matcher owner=ava::"
-                echo "::remove-matcher owner=ava-location::"
                 echo "::remove-matcher owner=ava-error::"
