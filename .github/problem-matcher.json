@@ -5,9 +5,8 @@
       "severity": "error",
       "pattern": [
         {
-          "regexp": "^\\s+✘ \\[fail\\]:\\s+(.+?)\\s+(.+)$",
-          "message": 1,
-          "code": 2
+          "regexp": "^\\s+✘ \\[fail\\]:\\s+.+?\\s+(.+)$",
+          "message": 1
         },
         {
           "regexp": "^\\s+tests/(.+\\.js):(\\d+)$",
@@ -21,8 +20,9 @@
       "severity": "error",
       "pattern": [
         {
-          "regexp": "^\\s+✘ \\[fail\\]:\\s+(.+)$",
-          "message": 1
+          "regexp": "^\\s+✘ \\[fail\\]:\\s+(.+?)\\s+([^/]+\\.json.+|Error thrown.+)$",
+          "message": 1,
+          "code": 2
         }
       ]
     }
