@@ -6,7 +6,8 @@
       "pattern": [
         {
           "regexp": "^\\s+✘ \\[fail\\]:\\s+(.+?)\\s+(.+)$",
-          "message": 1
+          "message": 1,
+          "code": 2
         },
         {
           "regexp": "^\\s+tests/(.+\\.js):(\\d+)$",
@@ -20,9 +21,9 @@
       "severity": "error",
       "pattern": [
         {
-          "regexp": "Failed to read JSON for .+: .+/work/is-a-dev/is-a-dev/(domains/.+\\.json): (.+)$",
-          "file": 1,
-          "message": 2
+          "regexp": "^\\s+✘ \\[fail\\]:\\s+(.+?)\\s+(.+\\.json.+)$",
+          "message": 1,
+          "code": 2
         }
       ]
     }
