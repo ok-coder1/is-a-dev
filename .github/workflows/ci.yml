@@ -49,7 +49,7 @@ jobs:
                   args: check
 
             - name: Register AVA Problem Matcher
-              run: echo "::add-matcher::.github/ava-matcher.json"
+              run: echo "::add-matcher::.github/problem-matcher.json"
 
             - name: Run tests
               run: npx ava tests/*.test.js --timeout=1m
