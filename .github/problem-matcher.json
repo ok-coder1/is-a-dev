@@ -1,22 +1,29 @@
 {
   "problemMatcher": [
     {
-      "owner": "ava-tests",
+      "owner": "ava",
+      "severity": "error",
       "pattern": [
         {
-          "regexp": "─ (.*) ─$",
-          "title": 1
+          "regexp": "^\\s+✘ \\[fail\\]:\\s+(.+?)\\s+(.+)$",
+          "message": 1,
+          "code": 2
         },
         {
-          "regexp": "^\\s+([^(]+):(\\d+):(\\d+)",
-          "file": 1,
-          "line": 2,
-          "column": 3,
-          "code": 5,
-          "message": 6,
+          "regexp": "^\\s+(.+)$",
+          "message": 1,
           "loop": true
         }
       ]
+    },
+    {
+      "owner": "ava-syntax-error",
+      "severity": "error",
+      "pattern": {
+        "regexp": "^\\s+SyntaxError:\\s+(.+?):\\s+(.+)$",
+        "file": 1,
+        "message": 2
+      }
     }
   ]
 }
