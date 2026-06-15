@@ -10,8 +10,8 @@
           "code": 2
         },
         {
-          "regexp": "^\\s+(.+)$",
-          "line": 1,
+          "regexp": "^\\s+(Error:|at\\s|SyntaxError:)\\s+(.+)$",
+          "message": 2,
           "loop": true
         }
       ]
