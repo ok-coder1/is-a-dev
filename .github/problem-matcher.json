@@ -5,20 +5,30 @@
       "severity": "error",
       "pattern": [
         {
-          "regexp": "^\\s+✘ \\[fail\\]:\\s+(.+)$",
-          "message": 1
-        },
+          "regexp": "^\\s+✘ \\[fail\\]:\\s+(.+?)\\s+(Error thrown in test|.+\\.json:.+)$",
+          "message": 1,
+          "code": 2
+        }
+      ]
+    },
+    {
+      "owner": "ava-location",
+      "severity": "error",
+      "pattern": [
         {
-          "regexp": "^\\s*$"
-        },
-        {
-          "regexp": "^\\s+(.+)$",
-          "message": 1
-        },
-        {
-          "regexp": "^\\s+tests\\/(.+\\.js):(\\d+)$",
+          "regexp": "^\\s+tests/(.+\\.js):(\\d+)$",
           "file": 1,
           "line": 2
+        }
+      ]
+    },
+    {
+      "owner": "ava-error",
+      "severity": "error",
+      "pattern": [
+        {
+          "regexp": "^\\s+Error:\\s+(.+)$",
+          "message": 1
         }
       ]
     }
