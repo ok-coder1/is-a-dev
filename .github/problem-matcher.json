@@ -18,7 +18,8 @@
         {
           "regexp": "^\\s+tests/(.+\\.js):(\\d+)$",
           "file": 1,
-          "line": 2
+          "line": 2,
+          "message": 1
         }
       ]
     },
