@@ -8,18 +8,11 @@
           "regexp": "^\\s+✘ \\[fail\\]:\\s+(.+?)\\s+(Error thrown in test|.+\\.json:.+)$",
           "message": 1,
           "code": 2
-        }
-      ]
-    },
-    {
-      "owner": "ava-location",
-      "severity": "error",
-      "pattern": [
+        },
         {
           "regexp": "^\\s+tests/(.+\\.js):(\\d+)$",
           "file": 1,
-          "line": 2,
-          "message": 1
+          "line": 2
         }
       ]
     },
