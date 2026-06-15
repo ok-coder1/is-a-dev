@@ -5,24 +5,8 @@
       "severity": "error",
       "pattern": [
         {
-          "regexp": "^\\s+✘ \\[fail\\]:\\s+.+?\\s+(.+)$",
+          "regexp": "^\\s+✘ \\[fail\\]:\\s+(.+)$",
           "message": 1
-        },
-        {
-          "regexp": "^\\s+tests/(.+\\.js):(\\d+)$",
-          "file": 1,
-          "line": 2
-        }
-      ]
-    },
-    {
-      "owner": "ava-error",
-      "severity": "error",
-      "pattern": [
-        {
-          "regexp": "^\\s+✘ \\[fail\\]:\\s+(.+?)\\s+([^/]+\\.json.+|Error thrown.+)$",
-          "message": 1,
-          "code": 2
         }
       ]
     }
