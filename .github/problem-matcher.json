@@ -5,8 +5,8 @@
       "severity": "error",
       "pattern": [
         {
-          "regexp": "✘ \\[fail\\]",
-          "message": 0
+          "regexp": "✘ \\[fail\\]: (.+)$",
+          "message": 1
         }
       ]
     }
