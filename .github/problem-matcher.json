@@ -19,11 +19,13 @@
     {
       "owner": "ava-syntax-error",
       "severity": "error",
-      "pattern": {
-        "regexp": "^\\s+SyntaxError:\\s+(.+?):\\s+(.+)$",
-        "file": 1,
-        "message": 2
-      }
+      "pattern": [
+        {
+          "regexp": "^\\s+SyntaxError:\\s+(.+?):\\s+(.+)$",
+          "file": 1,
+          "message": 2
+        }
+      ]
     }
   ]
 }
